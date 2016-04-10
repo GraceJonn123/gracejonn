@@ -4,27 +4,22 @@
     padding-top: 19%;
     font-size: 300%;
     overflow: hidden;
+    width: 1000px;
 }
 .body{
   position: relative;
 }
-.two{
-/*  position: absolute;
-*/}
+
 .middle{
-	height:contain;/*
-	background-color: black;*/
+	height:contain;
 	padding-top: 5%;
 }
-/*#h1, #h2, #h3{
-  font-family: 'Indie Flower', cursive;
-}*/
+
 #h2{
 font-size: 100%;
 font-family: 'Quicksand', sans-serif;
 }
-#h1{
-}
+
 #h3{
 font-size: 120%;
 font-family: 'Quicksand', sans-serif;
@@ -34,6 +29,7 @@ font-family: 'Quicksand', sans-serif;
 padding-top: 10%;
 font-family: 'Quicksand', sans-serif;
 }
+
 h2{
   position: center;
   padding: 5%;
@@ -41,10 +37,7 @@ h2{
   font-family: 'Quicksand', sans-serif;
   font-size: 250%;
 }
-/*
-#menu{
-  font-size: 200%;
-}*/
+
 .img{
   padding-top: 0;
   position: fixed;
@@ -73,6 +66,9 @@ h2{
   width: 60%;
   margin-left: 20%;
 }
+#tech{
+  padding-top: 50px;
+}
 #tint{
   height: 1119px;
   width: 1350px;
@@ -84,28 +80,14 @@ max-height: 50%;
 footer{
   font-size: 
 }
+.bott{
+  padding-top: 90px;
+  text-align: center;
+}
 body {
   background-color: #000;
+  overflow-x:hidden;
 }
-/*.p{
-  text-align: right;
-  font-size: 250%;
-  padding-top: 70%;
-  padding-left: 30%;
-  width: 60%;
-  color: orange;
-  position: relative;
-}
-p{
-  padding: 5%;
-  text-align: center;
-  background-color: blue;
-}*/
-/*.text{
-  border: 2px solid white;
-  position: absolute;
-
-}*/
 
 .container {
   position: fixed;
@@ -121,8 +103,7 @@ p{
   color: white;
   font-family: 'Indie Flower', cursive;
 
-/*  font-size: 150%;
-*/}
+}
 .element-animation1:hover{
   color: white;
   font-family: 'Indie Flower', cursive;
@@ -138,15 +119,23 @@ p{
 	padding: 5%;
 	
 }
-.tod{
-	padding-top: 10%;
-}
 .middle2{
-	height: 400px;
-	/*padding-top: 40px;*/
-  background-image: url(assets/orange1.jpg);
-  background-image-position: center;
+height: 200px;
+background-color: orange;
 }
+/*.tod{
+	padding-top: 70px;
+  background-image: url(assets/orange1.jpg);
+  background-color: orange;
+  background-image-position: center;
+  padding: 100px;
+}*/
+/*.middle2 {
+  padding-top: 70px;
+  background-color: orange;
+  background-image-position: center;
+  padding: 100px;
+}*/
 h4{
 	font-size:200%;
 	color: orange;
@@ -160,6 +149,15 @@ h3, h1{
 }
 body{
 	width: 100%;
+}
+#bott{
+  height: 100px;
+   background-color: orangered; 
+  text-align: center;
+}
+.bott{
+  height: 400px;
+  background-color: red;
 }
 .element-animation{
   animation: animationFrames ease 3s;
