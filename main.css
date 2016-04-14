@@ -69,8 +69,16 @@ h2{
 #tech{
   padding-top: 50px;
 }
+#button:hover{
+  font-size: 150%;
+}
 #tint{
   height: 1119px;
+  width: 1350px;
+  background:rgba(0,0,0,0.70);
+}
+#tint2{
+  height: 800px;
   width: 1350px;
   background:rgba(0,0,0,0.70);
 }
@@ -94,6 +102,9 @@ body {
   margin-left: 48%;
   margin-top: 35%;
 }
+.form{
+  padding-top: 40px;
+}
 
 .yup{
 	height:400px; 
@@ -116,12 +127,15 @@ body {
 }
 .yup img{
 	max-width: 100%;
-	padding: 5%;
-	
+	padding: 5%;	
+}
+#button{
+  font-size: 3000px;
 }
 .middle2{
-height: 200px;
+height: 700px;
 background-color: orange;
+padding-bottom: 40px;
 }
 /*.tod{
 	padding-top: 70px;
@@ -149,6 +163,19 @@ h3, h1{
 }
 body{
 	width: 100%;
+}
+p{
+     font-size: inherit;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-rendering: optimizeLegibility;
+    font-family: 'Quicksand', cursive;
+}
+.text{
+  color: orange; 
+  padding-top: 30px; 
+  font-size: 150%;
+  font-family: 'Quicksand', cursive;
 }
 #bott{
   height: 100px;
