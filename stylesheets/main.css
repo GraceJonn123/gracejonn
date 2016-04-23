@@ -1,17 +1,67 @@
 .topper{
-	/*background-image: url(assets/orange1.jpg);*/
+	background-image: url(assets/orange1.jpg);
 	height: 700px;
 	text-align: center;
-	padding-top:70px;
+	padding-top:150px;
 	font-size: 300%;
   overflow: hidden;
 }
 .body{
   position: relative;
 }
+
+nav {
+  background:rgba(0,0,0,0.70);
+  /*background: #171717;*/
+  height: 65px;
+}
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.sticky-wrapper {
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  height: 65px;
+  line-height: 65px;
+  padding: 10px 15px;
+  color: #A1A1A1;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#elevator:hover {
+z-index:1000;
+bottom: 1205px;
+left: 5px;
+}
+
 .two{
-/*  position: absolute;
-*/}
+  /*position: absolute;*/
+}
 .middle{
 	height:contain;/*
 	background-color: black;*/
@@ -75,25 +125,6 @@ footer{
 body {
   background-color: #000;
 }
-/*.p{
-  text-align: right;
-  font-size: 250%;
-  padding-top: 70%;
-  padding-left: 30%;
-  width: 60%;
-  color: orange;
-  position: relative;
-}
-p{
-  padding: 5%;
-  text-align: center;
-  background-color: blue;
-}*/
-/*.text{
-  border: 2px solid white;
-  position: absolute;
-
-}*/
 
 .container {
   position: fixed;
@@ -107,18 +138,13 @@ p{
 }
 .element-animation2:hover{
   color: white;
-  font-family: 'Indie Flower', cursive;
-
-/*  font-size: 150%;
-*/}
+}
 .element-animation1:hover{
   color: white;
-  font-family: 'Indie Flower', cursive;
 
 }
 .element-animation3:hover{
   color: white;
-  font-family: 'Indie Flower', cursive;
 
 }
 .yup img{
@@ -1647,3 +1673,4 @@ body{
     background-color: rgba(64, 0, 255, 0.5);
   }
 }
+*/*/
