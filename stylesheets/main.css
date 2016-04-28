@@ -191,11 +191,11 @@ body{
   box-sizing: border-box;
 }
 
-body {
+/*body {
   background: url("http://www.philippefercha.com/cd/toggle-menu-bg.jpg") no-repeat;
   background-size:2000px;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}
+}*/
 
 a {
   display: block;
@@ -211,7 +211,7 @@ a {
 .menu-opener {
   cursor: pointer;
   height: 64px;
-  position: absolute;
+  position: fixed;
   top: 2%;
   left: 1%;
   -webkit-user-select: none;
@@ -263,7 +263,7 @@ a {
 }
 
 .menu {
-  background: #000;
+  background: orange;
   color: transparent;
   height: 64px;
   position: absolute;
