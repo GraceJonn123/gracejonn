@@ -152,20 +152,80 @@ body {
   color: white;
 
 }
+
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Show more';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Show less';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 .5em;
+  color: #666;
+  font-size: .9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: .25em;
+}
+
+/* Other style */ 
+body {
+  padding: 2%;
+}
+
+p {
+  padding: 2%;
+  background: #fff9c6;
+  color: #c7b27e;
+  border: 1px solid #fce29f;
+  border-radius: .25em;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    }
 .yup img{
 	/*max-width: 100%;*/
 	padding: 5%;
 	
 }
+#tech{
+    height: 400px;
+  text-align: center;
+  font-size: 300%;
+  padding:30px;
+  color: white;
+  background-color: orange;
+  border: 2px solid white;
+  width: 60%;
+  margin-left: 20%;
+}
 .tod{
 	padding-top: 10%;
 }
-.middle2{
-	height: 400px;
-	/*padding-top: 40px;*/
-  background-image: url(assets/orange1.jpg);
-  background-image-position: center;
-}
+
 h4{
 	font-size:200%;
 	color: orange;
@@ -190,12 +250,6 @@ body{
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*body {
-  background: url("http://www.philippefercha.com/cd/toggle-menu-bg.jpg") no-repeat;
-  background-size:2000px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-}*/
 
 a {
   display: block;
