@@ -14,7 +14,8 @@
 nav {
   background:rgba(0,0,0,0.70);
   /*background: #171717;*/
-  height: 65px;
+  height: contain;
+  background-color: transparent;
 }
 
 nav.fixed {
@@ -25,10 +26,10 @@ nav.fixed {
 }
 
 .sticky-wrapper {
-  height: 65px;
+  /*height: 70;*/
   /*width: 100%;*/
-  position: fixed;
-  z-index: 1000;
+  /*position: fixed;*/
+  /*z-index: 1000;*/
 }
 
 nav ul {
@@ -61,7 +62,8 @@ left: 5px;
 }
 
 .two{
-  position: relative;
+  position: absolute;
+  z-index: 1;
 }
 .bot{
 position: absolute;
@@ -77,6 +79,11 @@ position: absolute;
 #h2{
 font-size: 100%;
 font-family: 'Quicksand', sans-serif;
+}
+
+#bobb{
+  z-index: 2;
+  position: absolute;
 }
 #h3{
 font-size: 120%;
@@ -109,7 +116,7 @@ h2{
   padding-bottom: 10px;
 }*/
 .bod{
-  /*position: absolute;*/
+  position: absolute;
   height: 1119px;
   width: 1350px; 
   background:rgba(black, 0.7);
@@ -127,14 +134,177 @@ h2{
 }
 #tint{/*
   height: 1119px;
-  width: 1350px; 
-  background:rgba(0,0,0,0.90);*/
+  width: 1350px*/; 
+  background:rgba(0,0,0,0.90);
 }
 #shots{
   border: 0;
     float: left;
     overflow: hidden
 }
+
+
+
+
+
+/******************************************************************COURSES**********************************************************************************/
+
+.courses-body {
+    margin: 0 auto;
+}
+.courses-body .columns {
+    margin-bottom: 2%;
+}
+.courses-intro h1 {
+    text-align: center;
+    margin-top: 15%;
+}
+.courses-intro p {
+    text-align: center;
+    margin-top: 5%;
+}
+.courses-intro .row {
+    max-width: 1380px;
+}
+.courses-intro p {
+    padding-bottom: 5%;
+}
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+html,
+body {
+    background: #FAFAFA;
+}
+.card {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #272727;
+    border-radius: 2px;
+}
+.card .title {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.card .content {
+    padding: 1.3rem;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px;
+}
+.card p {
+    margin: 0;
+}
+.card .action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 1.3rem;
+}
+.card a {
+    color: #ffab40;
+    margin-right: 1.3rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.card .image {
+    position: relative;
+}
+.card .image .title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.3rem;
+    color: orange;
+}
+.card .image img {
+    border-radius: 2px 2px 0 0;
+}
+
+/***************************************************************************************************************/
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+}
+.image-overlay-content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.overlay-fade-in p {
+    letter-spacing: 0.15em;
+    color: #f4f4f4;
+    font-size: 28px;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.overlay-fade-in img {
+    transition: all 1.2s linear;
+}
+.overlay-fade-in .image-overlay-content {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease-in-out;
+}
+.overlay-fade-in h2 {
+    color: #f2f2f2;
+    font-size: 1.8rem;
+    margin-top: 40%;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    background: rgba(0, 0, 0, 0.7);
+}
+.overlay-fade-in .button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    /*    changed below*/
+    background: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    position: relative;
+    border: 1px solid #999;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    margin-top: 30%;
+}
+.overlay-fade-in .button:hover {
+    box-shadow: 0 0 5px #000;
+}
+.overlay-fade-in:hover img {
+    transform: scale(1.2);
+}
+.overlay-fade-in:hover .image-overlay-content {
+    opacity: 1;
+}
+.overlay-fade-in:hover h2,
+.overlay-fade-in p,
+.overlay-fade-in .button {
+    opacity: 1;
+}
+.overlay-fade-in:hover p {
+    transition-delay: 0.1s;
+}
+.overlay-fade-in:hover .button {
+    transition-delay: 0s;
+}
+.button:hover {
+    background: white;
+    color: black;
+}
+
+
+/**/
+
+
 /*a {
     width: 408px;
     height: 408px;
